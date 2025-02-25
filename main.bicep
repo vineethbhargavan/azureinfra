@@ -28,7 +28,7 @@ resource webApp 'Microsoft.Web/sites@2021-02-01' = {
   properties: {
     serverFarmId: appServicePlan.id
     siteConfig: {
-      linuxFxVersion: 'PYTHON|3.9'
+      linuxFxVersion: 'PYTHON|3.11'
       appSettings: [
         {
           name: 'APPINSIGHTS_INSTRUMENTATIONKEY'
