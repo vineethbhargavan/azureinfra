@@ -16,3 +16,8 @@ The output includes credentials that you must protect. Be sure that you do not i
   "managementEndpointUrl": "https://management.core.windows.net/"
 }
 vineeth [ ~ ]$ 
+
+## Build errors
+\"Message\": \"The parameter LinuxFxVersion has an invalid value.\",\r\n  \"Target\": null,\r\n  \"Details\": [\r\n    ***\r\n      \"Message\": \"The parameter LinuxFxVersion has an invalid value.\"\r\n    ***,\r\n    ***\r\n      \"Code\": \"BadRequest\"\r\n    ***,\r\n    ***\r\n      \"ErrorEntity\": ***\r\n        \"ExtendedCode\": \"01007\",\r\n        \"MessageTemplate\": \"The parameter ***0*** has an invalid value.\",\r\n        \"Parameters\": [\r\n          \"LinuxFxVersion\"\r\n        ],\r\n        \"Code\": \"BadRequest\",\r\n        \"Message\": \"The parameter LinuxFxVersion has an invalid value.\"\r\n      ***\r\n    ***\r\n  ],\r\n  \"Innererror\": null\r\n***"***]***
+Error: Process completed with exit code 1.
+#### PYTHON|3.9 ,3.8 and 3.10 didn't work
