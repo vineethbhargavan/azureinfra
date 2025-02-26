@@ -31,7 +31,7 @@ resource webApp 'Microsoft.Web/sites@2021-02-01' = {
       linuxFxVersion: 'PYTHON|3.11'
       appSettings: [
         {
-          name: 'APPINSIGHTS_INSTRUMENTATIONKEY'
+          name: 'APPLICATIONINSIGHTS_CONNECTION_STRING'
           value: appInsights.properties.InstrumentationKey
         }
       ]
