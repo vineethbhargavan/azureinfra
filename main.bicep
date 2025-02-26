@@ -7,8 +7,8 @@ resource appServicePlan 'Microsoft.Web/serverfarms@2021-02-01' = {
   name: appServicePlanName
   location: location
   sku: {
-    tier: 'Standard'
-    name: 'S1'
+    tier: 'Free'
+    name: 'F1'
   }
   kind: 'linux'
 }
@@ -22,13 +22,13 @@ resource appInsights 'Microsoft.Insights/components@2020-02-02' = {
   }
 }
 
-resource webApp 'Microsoft.Web/sites@2018-11-01' = {
+resource webApp 'Microsoft.Web/sites@2021-02-01' = {
   name: webAppName
   location: location
   properties: {
     serverFarmId: appServicePlan.id
     siteConfig: {
-      linuxFxVersion: 'DOTNETCORE|6.0'
+      linuxFxVersion: 'PYTHON|3.11'
       appSettings: [
         {
           name: 'APPINSIGHTS_INSTRUMENTATIONKEY'
