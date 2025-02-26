@@ -22,7 +22,7 @@ resource appInsights 'Microsoft.Insights/components@2020-02-02' = {
   }
 }
 
-resource webApp 'Microsoft.Web/sites@2021-02-01' = {
+resource webApp 'Microsoft.Web/sites@2022-03-01' = {
   name: webAppName
   location: location
   properties: {
